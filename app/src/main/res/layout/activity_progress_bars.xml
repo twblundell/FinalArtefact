@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/OpenMaps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/statsbg"
+    tools:context="com.example.thomas.progressbar.ProgressBars">
+
+    <!--
+    Customised background to add consistency and improve Proof of Concept Prototype
+    application. Takes from drawable folder under res and sets as the background.
+    -->
+
+    <!--
+    Progress Bar remains outside of the Scroll View in order for the Bar to remain visible at all times
+    -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="600px"
+        android:layout_height="50px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250px"
+        android:progressBackgroundTint="#0071bf"
+        android:progressTint="#f5eff3" />
+    <!--
+    For styling I used my colour scheme from my logo and UI designs to show consistency and potential prototype look/feel
+    -->
+
+    <!--
+    Scroll View allows me to hold all of the content in the blank lower half of the interface
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1100px"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--
+            Each individual checkbox for each of the 20 Premier League teams is found below
+            each has customised colours and they are all unchecked therefore the value is false
+            -->
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="The Emirates, Arsenal F.C."
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Vitality Stadium, AFC Bournemouth"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Falmer Stadium, Brighton and Hove Albion"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Turf Moor, Burnley F.C."
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Stamford Bridge, Chelsea F.C."
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Selhurst Park, Crystal Palace"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Goodison Park, Everton F.C."
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Kirklees Stadium, Huddersfield Town"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="King Power Stadium, Leicester City"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Anfield, Liverpool F.C."
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Ethiad Stadium, Manchester City"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Old Trafford, Manchester United"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="St James' Park, Newcastle United"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="St Mary's Stadium, Southampton F.C."
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="bet365 Stadium, Stoke City"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Liberty Stadium, Swansea City"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="[GROUND SHARE] Wembley Stadium, Tottenham Hotspur"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Vicarage Road, Watford F.C."
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="The Hawthorns, West Bromwich Albion"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="[NEW from 2018] New White Hart Lane, Tottenham Hotspur"
+                android:textColor="#0071bf"
+                android:textColorLink="#0071bf"
+                android:textStyle="bold"
+                app:buttonTint="#00c800" />
+
+            <!--
+            As previously stated this Map Activity loads yet it does not display the maps
+            the concept here was when looking at leagues and stadia visited, you can see on
+            the Map API with coloured markers done via mapMarker representing visited/unvisited
+            stadia, encouraging you to attend
+            -->
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="300px"
+                android:textColor="#00c800"
+                android:background="#0071bf"
+                android:layout_height="wrap_content"
+                android:text="View On Map" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--
+Relative layout allows me keep my hierarchy "flat" and thus improving performance
+also allows me to specific layout by border or by id, before I initiated a Scroll View
+I had each Checkbox alligned to the bottom of the Checkbox id above.
+-->
+
+</RelativeLayout>
